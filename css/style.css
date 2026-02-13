@@ -1,0 +1,90 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SECTION */
+#tedrisSaheleri {
+    padding: 80px 60px;
+    align-items: center;
+    gap: 60px;
+}
+
+/* LEFT SIDE */
+.tedrisSaheleri-main {
+    max-width: 400px;
+}
+
+#tedrisSaheleri h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Purple line (у тебя уже было, я дополнил) */
+#tedrisSaheleri h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #9254B8;
+    margin: 20px 0;
+}
+
+.tedrisSaheleri-main p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* RIGHT SIDE GRID */
+.tedrisSaheleri-sublink ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+}
+
+/* CARD */
+.tedrisSaheleri-sublink li {
+    width: 220px;
+    height: 140px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* ICON */
+.tedrisSaheleri-sublink i {
+    font-size: 32px;
+    color: #9254B8;
+}
+
+/* TITLE */
+.tedrisSaheleri-sublink h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* HOVER EFFECT */
+.tedrisSaheleri-sublink li:hover {
+    transform: translateY(-8px);
+    background: #9254B8;
+}
+
+.tedrisSaheleri-sublink li:hover i,
+.tedrisSaheleri-sublink li:hover h2 {
+    color: #fff;
+}

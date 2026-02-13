@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tedris saheleri</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+       #tedrisSaheleri h1::after{
+        content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color:#9254B8;
+            margin: 20px 0;
+       }
+    </style>
 </head>
 <body>
-    <section id="tedrisSaheleri">
+    <section id="tedrisSaheleri" style="display: flex;justify-content: space-around;">
        <div class="tedrisSaheleri-main" >
             <h1>Tedris saheleri</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
         
        </div>
-        <div class="tedrisSaheleri-sublink">
+        <div class="tedrisSaheleri-sublink" style="display: flex;justify-content: space-around;flex-wrap: wrap;gap: 20px;">
           <ul>
                 <li>
                     <i class="fa-solid fa-computer"></i>
